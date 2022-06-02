@@ -1,0 +1,57 @@
+body{
+    font-size: 18px;
+    width: 100%;
+    height: auto;
+    font-family: 'Roboto', sans-serif;
+    color: #000000;
+}
+h1 h2 h3 h4 h5 h6{
+    font-family: 'Roboto', sans-serif;
+    color: #000000;
+}
+li{
+    color: #000000;
+    list-style: none;
+}
+p{
+    color: #000000; 
+    font-size: 18px;
+}
+/* navbar */
+.navbar {
+    width: 100%;
+    height: auto;
+    /* border: #000000 solid 1px; */
+}
+.welcome .nav-item .nav-link{
+    width: 100%;
+    height: auto;
+}
+.user-name{
+    margin: 0px 5px;
+}
+.dropdown-menu{
+    width: 100%;
+    height: auto;
+}
+.user-info{
+    width: 100%;
+    height: auto;
+}
+.name-website a{
+    text-decoration: none;
+    color: #000000;
+}
+.seach-wapper{
+    width: 100%;
+    height: auto;
+    /* border: #000000 solid 1px; */
+    margin: 20px 0px;
+}
+#search-btn{
+    color: #000000;
+}
+#search-text{
+    padding: 10px 10px;
+}
+
