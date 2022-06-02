@@ -69,5 +69,7 @@ p{
 .table-user{
     margin-top: 20px;
 }
-
+.tbody th{
+    text-align: center;
+}
 
