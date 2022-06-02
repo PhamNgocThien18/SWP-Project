@@ -17,11 +17,12 @@ p{
     color: #000000; 
     font-size: 18px;
 }
-/* navbar */
+
+/* navbar admin */
 .navbar {
     width: 100%;
     height: auto;
-    /* border: #000000 solid 1px; */
+    margin-bottom: 20px;
 }
 .welcome .nav-item .nav-link{
     width: 100%;
@@ -45,13 +46,28 @@ p{
 .seach-wapper{
     width: 100%;
     height: auto;
-    /* border: #000000 solid 1px; */
     margin: 20px 0px;
 }
 #search-btn{
     color: #000000;
 }
 #search-text{
-    padding: 10px 10px;
+    padding: 5px 10px;
 }
+.card-shopping{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.product-list{
+    margin: 0;
+}
+.logo{
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 18px;
+}
+.table-user{
+    margin-top: 20px;
+}
+
 

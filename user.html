@@ -10,11 +10,108 @@
         @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
     </style>
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+    integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </head>
 <body>
-    
+    <!-- nabar -->
+    <div class="container">
+        <div class="row navbar">
+            <div class="col-sm-4 navbar-user-left d-flex">
+                <div class="col-sm-6 logo">
+                    <a href="#">logo</a>
+                </div>
+                <div class="col-sm-6">
+                    <div class="nav-item dropdown ">
+                        <a class="nav-link dropdown-toggle d-flex align-items-center justify-content-center user-info" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown">
+                          <p class="product-list">Product</p>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                          <li>
+                            <a class="dropdown-item" href="#">Laptop</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">Camera</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">Graphic Tablet</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">Tablet</a>
+                          </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 text-center navbar-user-fill">
+
+            </div>
+            <div class="col-sm-4 text-center navbar-user-right d-flex">
+                <div class="col-sm-6 card-shopping">
+                    <a href="#" class="" role="button"><i class="fas fa-shopping-cart text-dark"></i></a>
+                </div>
+                <div class="col-sm-6">
+                    <div class="nav-item dropdown ">
+                        <a class="nav-link dropdown-toggle d-flex align-items-center justify-content-center user-info" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown">
+                          <img
+                            src="https://scontent.fsgn5-11.fna.fbcdn.net/v/t1.6435-9/148200636_528659258096027_8966625421411191162_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=dzMdGh7CUt4AX978A2p&_nc_ht=scontent.fsgn5-11.fna&oh=00_AT_T8cl7XJeQ7xnVIt7NSbBeFkMmZy_8FtaihBZKvwhxjw&oe=62BB3767" class="rounded-circle" height="20">
+                          <p class="user-name">Thienpnse150137</p>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                          <li>
+                            <a class="dropdown-item" href="#">My profile</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">Logout</a>
+                          </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <ul class="nav nav-pills nav-fill">
+                <li class="nav-item">
+                    <a href="nav-link" href="#" class="btn btn-secondary">PPOCESSING REQUEST</a>
+                </li>
+                <li class="nav-item">
+                    <a href="nav-link" href="#" class="btn btn-secondary">PPOCESSING REQUEST</a>
+                </li>
+                <li class="nav-item">
+                    <a href="nav-link" href="#" class="btn btn-secondary">PPOCESSING REQUEST</a>
+                </li>
+                <li class="nav-item">
+                    <a href="nav-link" href="#" class="btn btn-secondary">PPOCESSING REQUEST</a>
+                </li>
+                <li class="nav-item">
+                    <a href="nav-link" href="#" class="btn btn-secondary">PPOCESSING REQUEST</a>
+                </li>
+            </ul>
+            <div class="table container table-user">
+                <table class="col-sm-12">
+                    <thead>
+                        <th>STT</th>
+                        <th>Request ID</th>
+                        <th>Request Date</th>
+                        <th>Status</th>
+                        <th class="text-center">Action</th>
+                    </thead>
+                    <tbody>
+                        <td>01</td>
+                        <td>SE01</td>
+                        <td>12/02/2022</td>
+                        <td>Active</td>
+                        <td>
+                            <button class="btn btn-primary" type="button">Details</button>
+                            <button class="btn btn-danger" type="button">Cancel</button>
+                        </td>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
