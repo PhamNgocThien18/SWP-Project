@@ -88,3 +88,11 @@ a{
 .navbarlogin a{
     color: #FFFF;
 }
+.user-name-profile{
+    color: #000;
+    font-size: 40px;
+    margin-left: 15%;
+}
+#profile-info{
+    margin-left: 10%;
+}
