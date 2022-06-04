@@ -1,8 +1,8 @@
 * {
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 html{
-    background-color: rgba(246, 166, 18, 0.768);
     height: 100%;
 }
 
@@ -39,8 +39,8 @@ a{
 }
 
 .navbar-top .navbar-header {
-    height: 43px;
-    background-color: rgb(211, 146, 16);
+    height: auto;
+    width: 100%;
 }
 
 
@@ -125,11 +125,6 @@ a{
 
 /* FOOTER */
 
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,500,300,700);
-
-* {
-  font-family: Open Sans;
-}
 
 section {
   width: 100%;
@@ -296,7 +291,6 @@ section {
 	color: #ffffff;
 	text-align: center;
 	line-height: 35px;
-
 	margin-right: 3px;
 	margin-bottom: 5px;
 }
