@@ -317,3 +317,15 @@ section {
 	}
 
 }
+
+/* navbar-manager */
+.manage-navbar .nav-item{
+	padding: 1% 1%;
+}
+.manager-function .left-function button{
+	margin: 1% 2%;
+}
+.table-wapper{
+	width: 100%;
+}
+
