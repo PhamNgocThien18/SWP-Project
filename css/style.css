@@ -333,3 +333,12 @@ section {
 	width: 100%;
 }
 
+/* navbar-staff */
+.staff-navbar button{
+	margin: 1% 4%;
+}
+.staff-navbar a{
+	text-decoration: none;
+	color: #ffffff;
+}
+
