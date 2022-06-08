@@ -2,9 +2,20 @@
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
+div a{
+	color: #000;
+}
+div a:hover{
+	text-decoration: none;
+	color: #009688;
+}
+.name-website{
+	font-size: 30px;
+}
 html{
     height: 100%;
 }
+
 
 body{
     font-size: 18px;
@@ -111,6 +122,7 @@ a{
 }
 .navbarlogin a{
     color: #FFFF;
+	font-size: 60px;
 }
 .user-name-profile{
     color: #000;
@@ -333,12 +345,12 @@ section {
 	width: 100%;
 }
 
-/* navbar-staff */
+/* navbar-staff */navbarlogin
 .staff-navbar button{
 	margin: 1% 4%;
 }
 .staff-navbar a{
 	text-decoration: none;
 	color: #ffffff;
+	
 }
-
