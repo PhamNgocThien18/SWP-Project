@@ -351,6 +351,28 @@ section {
 }
 .staff-navbar a{
 	text-decoration: none;
-	color: #ffffff;
-	
+	color: #ffffff;	
+}
+.button-insert{
+	margin: 0px 1%;
+}
+.insert-wapper{
+	width: 100%;
+	height: auto;
+	justify-content: center;
+}
+.manager-function .dropdown-menu{
+	width: auto;
+}
+.modal-title {
+	color: #000;
+}
+.modal-body{
+	color: #000;
+}
+.dropdown input{
+	border: none;
+}
+#selected{
+	border: none;
 }
