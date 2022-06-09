@@ -40,6 +40,10 @@ a{
     text-decoration: none;
 }
 
+.login-form a {
+	padding: 8px;
+}
+
 
 /* navbar-header admin */
 .navbar-header {
@@ -75,6 +79,7 @@ a{
     text-decoration: none;
     color: #000000;
 }
+
 
 /* Search-admin */
 .seach-wapper{
@@ -142,9 +147,9 @@ section {
   width: 100%;
   display: inline-block;
   background: rgb(182, 48, 48);
-  height: 120px;
+  height: 83px;
   text-align: center;
-  font-size: 82px;
+  font-size: 50px;
   font-weight: 700;
 }
 
