@@ -51,17 +51,29 @@
         </div>
     </div>
     <div class="manage-navbar">
-        <button class="btn btn-primary">
-            <a href="iddevicenamager.html">Manage Devices</a>
-        </button>
-        <button class="btn btn-secondary">
-            <a href="warehousemanager.html">Manage Warehouse</a>
-        </button>
+        <a href="iddevicenamager.html">
+            <button class="btn btn-secondary">
+                Manage Devices
+            </button>
+        </a>
+        <a href="warehousemanager.html">
+            <button class="btn btn-secondary">
+                Manage Warehouse
+            </button>
+        </a>
+        <a href="#">
+            <button class="btn btn-primary">
+                Manage Catagory
+            </button>
+        </a>
     </div>
     <div class="row manager-function d-flex align-items-center">
         <div class="col-sm-6 left-function text-center">
             <a href="#" id="insert-new-catagory">
-                <button class="btn " type="button"><i class="fas fa-plus-circle"></i></button>
+                <button class="btn " type="button">
+                    <i class="fas fa-plus-circle"></i>
+                    <label class="button-insert">Insert New Catagory</label>
+                </button>
             </a>
             <div id="detailModal" class="modal fade" role="dialog">
                 <div class="modal-dialog modal-lg" role="content">
@@ -93,24 +105,6 @@
                     </div>
                 </div>
             </div>
-            <button type="button" class="btn">
-                <!-- <i class="fas fa-plus-circle"></i>
-                <label for="">insert new Device</label> -->
-                <div class="nav-item dropdown d-flex align-items-center insert-wapper">
-                    <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" id="navbarDropdownMenuLink"
-                        role="button" data-toggle="dropdown">
-                        <label class="button-insert">Insert New Catagory</label>
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <li>
-                            <a class="dropdown-item" href="insertdevices.html">Device</a>
-                        </li>
-                        <li>
-                            <a class="dropdown-item" href="#">Category</a>
-                        </li>
-                    </ul>
-                </div>
-            </button>
             <button type="button" class="btn">
                 <!-- <i class="fas fa-plus-circle"></i>
                 <label for="">insert new Device</label> -->
@@ -192,11 +186,9 @@
                         </div>
                     </td>
                     <th>
-                        <a href="" id="fa-caret-down">
-                            <button class="btn btn-light">
-                                <i class="fas fa-caret-down"></i>
-                            </button>
-                        </a>
+                        <button class="btn btn-light" id="dropdown-firsttable">
+                            <i class="fas fa-caret-down"></i>
+                        </button>
                     </th>
                 </tr>
             </thead>
@@ -212,7 +204,7 @@
             </tbody>
         </table>
         <div class="container">
-            <div class="table-wapper col-sm-12">
+            <div class="table-wapper col-sm-12" id="second-table">
                 <table class="table text-center">
                     <thead>
                         <tr>
@@ -220,24 +212,24 @@
                             <th>Description Name</th>
                             <th>Delete</th>
                             <th>Update</th>
-                            <td>
-                                <a href="#" id="insert-new-description">
+                            <th>
+                                <a href="#" id="insert-new-detail">
                                     <button class="btn " type="button"><i class="fas fa-plus-circle"> Insert New Description</i></button>
                                 </a>
-                                <div id="detailModal-description" class="modal fade" role="dialog">
+                                <div id="detailModal-detail" class="modal fade" role="dialog">
                                     <div class="modal-dialog modal-lg" role="content">
                                         <!-- Modal content-->
                                         <div class="modal-content">
                                             <div class="modal-header">
-                                                <h4 class="modal-title">Insert New Description</h4>
+                                                <h4 class="modal-title">Insert New Detail of Description</h4>
                                                 <button type="button" class="close" data-dismiss="modal">&times;</button>
                                             </div>
                                             <div class="modal-body">
                                                 <form>
                                                     <div class="form-row">
                                                         <div class="form-group col-sm-12 d-flex">
-                                                            <h5 class="col-sm-4">Description Name</h5>
-                                                            <input class="col-sm-6" type="text" placeholder="Input new Cate ID">
+                                                            <h5 class="col-sm-4">Detail Name</h5>
+                                                            <input class="col-sm-6" type="text" placeholder="Input new Detail Name">
                                                         </div>
                                                         <div class="col-sm-12">
                                                             <button class="btn btn-success col-sm-4"> 
@@ -250,13 +242,11 @@
                                         </div>
                                     </div>
                                 </div>
-                            </td>
+                            </th>
                             <th>
-                                <a href="" id="fa-caret-down">
-                                    <button class="btn btn-light">
-                                        <i class="fas fa-caret-down"></i>
-                                    </button>
-                                </a>
+                                <button class="btn btn-light" id="dropdown-second-table">
+                                    <i class="fas fa-caret-down"></i>
+                                </button>
                             </th>
                         </tr>
                     </thead>
@@ -271,7 +261,7 @@
                     </tbody>
                 </table>
             </div>
-            <div class="table-wapper col-sm-9">
+            <div class="table-wapper col-sm-8" id="third-table">
                 <table class="table text-center">
                     <thead>
                         <tr>
@@ -291,9 +281,8 @@
                     </tbody>
                 </table>
             </div>
-        </div>
     </div>
-    
+</div>
 </body>
 <footer></footer>
 <script>
@@ -301,12 +290,26 @@
         $("#insert-new-catagory").click(function () {
             $("#detailModal").modal("show");
         });
-    })
-    $(document).ready(function () {
+
         $("#insert-new-description").click(function () {
             $("#detailModal-description").modal("show");
         });
-    })
+
+        $("#insert-new-detail").click(function () {
+            $("#detailModal-detail").modal("show");
+        });
+
+        $('#dropdown-firsttable').click(function() {
+            $('#second-table').toggle(1000);
+        });
+
+        $('#dropdown-second-table').click(function() {
+            $('#third-table').toggle(1000);
+        });
+        $('#dropdown-firsttable').click(function() {
+            $('#third-table').hide(1000);
+        });
+    });
 </script>
 
 </html>

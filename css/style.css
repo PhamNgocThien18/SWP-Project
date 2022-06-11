@@ -381,3 +381,9 @@ section {
 #selected{
 	border: none;
 }
+#second-table{
+	display: none;
+}
+#third-table{
+	display: none;
+}
