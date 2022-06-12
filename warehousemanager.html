@@ -69,14 +69,71 @@
     </div>
     <div class="row manager-function d-flex align-items-center">
         <div class="col-sm-6 left-function text-center">
+            <a href="#" id="insert-new-warehouse">
+                <button class="btn " type="button">
+                    <i class="fas fa-plus-circle"></i>
+                    <label class="button-insert">Insert New WareHouse</label>
+                </button>
+            </a>
+            <div id="detailModal" class="modal fade" role="dialog">
+                <div class="modal-dialog modal-lg" role="content">
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title">Insert New WareHouse</h4>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="form-row">
+                                    <div class="form-group col-sm-12 d-flex">
+                                        <h5 class="col-sm-4">WareHouse Name</h5>
+                                        <input class="col-sm-6" type="text" placeholder="Input new WareHouse Name">
+                                    </div>
+                                    <div class="form-group col-sm-12 d-flex">
+                                        <h5 class="col-sm-4">Location</h5>
+                                        <input class="col-sm-6" type="text" placeholder="Input new Location">
+                                    </div>
+                                    <div class="form-group col-sm-12 d-flex">
+                                        <h5 class="col-sm-4">Limit Amount</h5>
+                                        <input class="col-sm-6" type="text" placeholder="Input Limit Amount">
+                                    </div>
+                                    <div class="col-sm-12">
+                                        <button class="btn btn-success col-sm-4"> 
+                                            Insert                      
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <button type="button" class="btn">
-                <i class="fas fa-plus-circle"></i>
-                <label for="">insert new Device</label>
+                <!-- <i class="fas fa-plus-circle"></i>
+                <label for="">insert new Device</label> -->
+                <div class="nav-item dropdown d-flex align-items-center">
+                    <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" id="navbarDropdownMenuLink"
+                        role="button" data-toggle="dropdown">
+                        <input type="submit" value="Ram">
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li>
+                            <a class="dropdown-item" href="#">Ram</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">CPU</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">VGA</a>
+                        </li>
+                    </ul>
+                </div>
             </button>
-            <button type="button" class="btn">
+            <!-- <button type="button" class="btn">
                 <label for="">Category</label>
                 <i class="fas fa-arrow-down"></i>
-            </button>
+            </button>-->
             <button type="button" class="btn">
                 <label for="">Filter</label>
             </button>
@@ -118,6 +175,14 @@
             </tbody>
         </table>
     </div>
+    <footer></footer>
+    <script>
+        $(document).ready(function(){
+            $("#insert-new-warehouse").click(function () {
+            $("#detailModal").modal("show");
+        });
+        })
+    </script>
 </body>
 
 </html>
