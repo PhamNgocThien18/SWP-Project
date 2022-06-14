@@ -13,14 +13,13 @@ div a:hover{
 	font-size: 30px;
 }
 html{
-    height: 100%;
+    height: auto;
 }
 
 
 body{
     font-size: 18px;
     width: 100%;
-    height: auto;
     font-family: 'Roboto', sans-serif;
     color: #000000;
 }
@@ -53,20 +52,16 @@ a{
     display: flex;
 }
 
-.navbar-top .navbar-header {
+/* .navbar-top .navbar-header {
     height: auto;
     width: 100%;
 }
-
-
 
 .welcome .nav-item .nav-link{
     width: 100%;
     height: auto;
 }
-.user-name{
-    margin: 0px 5px;
-}
+
 .dropdown-menu{
     width: 100%;
     height: auto;
@@ -74,6 +69,9 @@ a{
 .user-info{
     width: 100%;
     height: auto;
+} */
+.user-name{
+    margin: 0px 5px;
 }
 .name-website a{
     text-decoration: none;
