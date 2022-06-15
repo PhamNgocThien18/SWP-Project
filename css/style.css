@@ -72,6 +72,7 @@ a{
 } */
 .user-name{
     margin: 0px 5px;
+	font-size: 18px;
 }
 .name-website a{
     text-decoration: none;
@@ -385,4 +386,17 @@ section {
 #third-table{
 	display: none;
 	max-width: 660px;
+}
+.inputmanager{
+	max-width: 150px;
+}
+.manager-function .left-function .insert .insertnew{
+	padding: 15px;
+	width: 220px;
+}
+.manager-function .left-function .filterbutton{
+	padding: 11px;
+}
+.manage-navbar .btnoption {
+	padding: 15px;
 }
