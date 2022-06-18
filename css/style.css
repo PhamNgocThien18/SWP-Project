@@ -137,7 +137,9 @@ a{
     margin-left: 10%;
 }
 
-
+.table-all{
+	min-height: 600px;
+}
 
 /* FOOTER */
 
@@ -380,13 +382,6 @@ section {
 #selected{
 	border: none;
 }
-#second-table{
-	display: none;
-}
-#third-table{
-	display: none;
-	max-width: 660px;
-}
 .inputmanager{
 	max-width: 150px;
 }
@@ -399,4 +394,13 @@ section {
 }
 .manage-navbar .btnoption {
 	padding: 15px;
+}
+.chose-detail{
+	width: 100%;
+}
+#input-insertdetail{
+	height: 31px;
+}
+#btn-check{
+	margin-top: 6px;
 }
