@@ -377,7 +377,7 @@ section {
 }
 
 .dropdown li:hover .dropdown-item {
-	background: rgb(221, 18, 18);
+	background: #0069D9;
 }
 
 .dropdown-menu {
@@ -390,11 +390,10 @@ section {
 .dropdown-menu .drop-submenu-1 {
     background: #fff;
     position: absolute;
-    left: 150px;
+    left: 158px;
     top: 8px;
     width: 150px;
     border: 1px solid #2a2727;
-    border-radius: 6px;
     display: none;
 }
 
@@ -405,11 +404,10 @@ section {
 .dropdown-menu .drop-submenu-2 {
     background: #fff;
     position: absolute;
-    left: 150px;
+    left: 158px;
     top: 40px;
     width: 150px;
     border: 1px solid #2a2727;
-    border-radius: 6px;
     display: none;
 }
 
@@ -420,11 +418,10 @@ section {
   .dropdown-menu .drop-submenu-3 {
     background: #fff;
     position: absolute;
-    left: 150px;
+    left: 158px;
     top: 72px;
     width: 150px;
     border: 1px solid #2a2727;
-    border-radius: 6px;
     display: none;
 }
 
@@ -435,11 +432,10 @@ section {
   .dropdown-menu .drop-submenu-4 {
     background: #fff;
     position: absolute;
-    left: 150px;
+    left: 158px;
     top: 104px;
     width: 195px;
     border: 1px solid #2a2727;
-    border-radius: 6px;
     display: none;
 }
 
@@ -448,7 +444,7 @@ section {
   }
 
 .dropdown ul li label:hover {
-	color: red;
+	color: #0069D9;
 }
 
 
