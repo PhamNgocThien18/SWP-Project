@@ -486,3 +486,9 @@ section {
 	margin-top: 6px;
 }
 /* Adding more */
+#device-nametable{
+	width: 100%;
+}
+#input-devicename{
+	min-width: 100%;
+}
