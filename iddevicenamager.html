@@ -167,11 +167,17 @@
                 <tr>
                     <td><input type="text" class="text-center inputmanager" value="01"></td>
                     <td><input type="text" class="text-center inputmanager" value="01"></td>
-                    <td><input type="text" class="text-center inputmanager" value="01"></td>
+                    <td>
+                        <select name="cars" id="cars">
+                            <option value="volvo">Volvo</option>
+                            <option value="saab">Saab</option>
+                            <option value="mercedes">Mercedes</option>
+                            <option value="audi">Audi</option>
+                        </select>
+                    </td>
                     <td><input type="text" class="text-center inputmanager" value="01"></td>
                     <td><a href="#" id="fa-info-circle">
-                        <button class="btn " type="button"><i
-                                    class="fas fa-info-circle"></i></button></a>
+                            <button class="btn " type="button"><i class="fas fa-info-circle"></i></button></a>
                         <div id="detailModal" class="modal fade" role="dialog">
                             <div class="modal-dialog modal-lg" role="content">
                                 <!-- Modal content-->
@@ -223,7 +229,7 @@
         $("#fa-info-circle").click(function () {
             $("#detailModal").modal("show");
         });
-    })  
+    })
 </script>
 
 
