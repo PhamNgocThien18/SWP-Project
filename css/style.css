@@ -501,6 +501,7 @@ select#cars {
 
 .inputmanager {
 	max-width: 150px;
+	min-height: 38px;
 }
 
 .manager-function .left-function .insert .insertnew {
@@ -550,6 +551,7 @@ select#cars {
 }
 .manage-input{
 	width: 100%;
+	min-height: 38px;
 }
 #btn-info{
 	font-size: 20px;
