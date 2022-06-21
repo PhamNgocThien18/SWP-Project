@@ -73,22 +73,18 @@
 
     <div class="row manager-function d-flex align-items-center">
         <div class="col-sm-6 left-function text-center">
-            <button type="button" class="btn">
-                <!-- <i class="fas fa-plus-circle"></i>
-                <label for="">insert new Device</label> -->
-                <div class="nav-item dropdown d-flex align-items-center insert-wapper">
-                    <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" id="navbarDropdownMenuLink"
-                        role="button" data-toggle="dropdown">
-                        <i class="fas fa-plus-circle"></i>
-                        <label class="button-insert">Insert new devices</label>
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <li>
-                            <a class="dropdown-item" href="insertdevices.html">Devices</a>
-                        </li>
-                    </ul>
-                </div>
-            </button>
+            <a href="insertdevices.html" class="insert">
+                <button class="btn insertnew" type="button">
+                    <i class="fas fa-plus-circle"></i>
+                    <label class="button-insert">Insert New Devices</label>
+                </button>
+            </a>
+            <!-- <a href="insertdevices.html">
+                <button type="button" class="btn filterbutton">
+                    <i class="fas fa-plus-circle"></i>
+                    <label class="button-insert">Insert new devices</label>
+                </button>
+            </a> -->
             <button type="button" class="btn">
                 <!-- <i class="fas fa-plus-circle"></i>
                 <label for="">insert new Device</label> -->
@@ -167,10 +163,16 @@
                 <tr>
                     <td><input type="text" class="text-center inputmanager" value="01"></td>
                     <td><input type="text" class="text-center inputmanager" id="input-devicename" value="01"></td>
-                    <td><input type="text" class="text-center inputmanager" value="01"></td>
+                    <td>
+                        <select class="inputmanager pt-1 pb-1 pl-2 pr-4">
+                            <option selected disabled>Chose Brand</option>
+                            <option value="#">Apple</option>
+                            <option value="#">Asus</option> 
+                        </select>
+                    </td>
                     <td><input type="text" class="text-center inputmanager" value="01"></td>
                     <td><a href="#" id="fa-info-circle">
-                            <button class="btn " type="button"><i class="fas fa-info-circle"></i></button></a>
+                            <button class="btn " type="button"><i class="fas fa-info-circle" id="btn-info"></i></button></a>
                         <div id="detailModal" class="modal fade" role="dialog">
                             <div class="modal-dialog modal-lg" role="content">
                                 <!-- Modal content-->
@@ -207,7 +209,13 @@
                         </div>
                     </td>
                     <td><input type="text" class="text-center inputmanager" value="01"></td>
-                    <td><input type="text" class="text-center inputmanager" value="01"></td>
+                    <td>
+                        <select class="inputmanager pt-1 pb-1 pl-2 pr-4">
+                            <option selected disabled>Chose ID</option>
+                            <option value="#">WH-01</option>
+                            <option value="#">WH-02</option> 
+                        </select>
+                    </td>
                     <td><button type="button" class="btn btn-dark">Delete</button></td>
                     <td><button type="button" class="btn btn-dark">Update</button></td>
                 </tr>
