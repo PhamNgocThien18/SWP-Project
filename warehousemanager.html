@@ -159,7 +159,7 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
+                <tr id="info">
                     <td><input type="text" class="text-center manage-input" value="01"></td>
                     <td><input type="text" class="text-center manage-input" value="01"></td>
                     <td><input type="text" class="text-center manage-input" value="01"></td>
@@ -177,7 +177,10 @@
             $("#insert-new-warehouse").click(function () {
             $("#detailModal").modal("show");
         });
-        })
+        });
+        function Delete() {
+      $("#info").remove();
+       }
     </script>
 </body>
 

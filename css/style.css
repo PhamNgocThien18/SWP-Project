@@ -100,10 +100,14 @@ a {
 
 #search-btn {
 	color: #000000;
+	border-top-right-radius: 5px ;
+	border-bottom-right-radius:5px ;
 }
 
 #search-text {
 	padding: 5px 10px;
+	border-top-left-radius: 5px ;
+	border-bottom-left-radius:5px ;
 }
 
 
@@ -557,5 +561,8 @@ select#cars {
 	font-size: 20px;
 }
 #btn-cartdown{
+	font-size: 22px;
+}
+.fa-shopping-cart{
 	font-size: 22px;
 }
