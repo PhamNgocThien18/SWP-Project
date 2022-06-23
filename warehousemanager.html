@@ -159,13 +159,31 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
+                <tr id="info">
                     <td><input type="text" class="text-center manage-input" value="01"></td>
                     <td><input type="text" class="text-center manage-input" value="01"></td>
                     <td><input type="text" class="text-center manage-input" value="01"></td>
                     <td><input type="text" class="text-center manage-input" value="01"></td>
                     <td><input type="text" class="text-center manage-input" value="01"></td>
-                    <td><button type="button" class="btn btn-danger"><i class="fas fa-trash-alt"></i></button></td>
+                    <td><button type="button" class="btn btn-danger" onclick= Delete()><i class="fas fa-trash-alt"></i></button></td>
+                    <td><button type="button" class="btn btn-success"><i class="fas fa-recycle"></i></button></td>
+                </tr>
+                <tr id="info">
+                    <td><input type="text" class="text-center manage-input" value="01"></td>
+                    <td><input type="text" class="text-center manage-input" value="01"></td>
+                    <td><input type="text" class="text-center manage-input" value="01"></td>
+                    <td><input type="text" class="text-center manage-input" value="01"></td>
+                    <td><input type="text" class="text-center manage-input" value="01"></td>
+                    <td><button type="button" class="btn btn-danger" onclick= Delete()><i class="fas fa-trash-alt"></i></button></td>
+                    <td><button type="button" class="btn btn-success"><i class="fas fa-recycle"></i></button></td>
+                </tr>
+                 <tr id="info">
+                    <td><input type="text" class="text-center manage-input" value="01"></td>
+                    <td><input type="text" class="text-center manage-input" value="01"></td>
+                    <td><input type="text" class="text-center manage-input" value="01"></td>
+                    <td><input type="text" class="text-center manage-input" value="01"></td>
+                    <td><input type="text" class="text-center manage-input" value="01"></td>
+                    <td><button type="button" class="btn btn-danger" onclick= Delete()><i class="fas fa-trash-alt"></i></button></td>
                     <td><button type="button" class="btn btn-success"><i class="fas fa-recycle"></i></button></td>
                 </tr>
             </tbody>
@@ -177,7 +195,10 @@
             $("#insert-new-warehouse").click(function () {
             $("#detailModal").modal("show");
         });
-        })
+        });
+        function Delete() {
+      $("#info").remove();
+       }
     </script>
 </body>
 
