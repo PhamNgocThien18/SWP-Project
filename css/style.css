@@ -566,3 +566,62 @@ select#cars {
 .fa-shopping-cart{
 	font-size: 22px;
 }
+.navbar-col{
+	padding: 0;
+	background-color: #0069D9;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+.navbar-option{
+	padding: 0;
+}
+.navbar-option ul{
+	padding-left: 0px;
+	min-height: 100%;
+	width: 100%;
+	
+}
+.navbar-option ul li{
+	padding-top: 50%;
+	padding-left: 40%;
+	font-size: 22px;
+}
+.fas-option{
+	color: #fff;
+	position: relative;
+}
+.navbaroption-tittle{
+	display: none;
+}
+.navbar-col ul li :hover .fas-option {
+	color: #000;
+	background-color: #fff;
+	padding: 25%;
+	border-radius: 50%;
+	/* border:#000 solid 1px; */
+}
+.navbar-col ul li :hover .navbaroption-tittle{
+	display: block;
+}
+.navbaroption-tittle{
+	position: absolute;
+	font-size: 18px;
+	color: #000;
+	left: 72%;
+	top: 5%;
+	background-color: #fff;
+	padding: 14px;
+	border-top-right-radius: 6px;
+	border-bottom-right-radius: 6px;
+	/* border-top: #000 solid 1px;
+	border-right: #000 solid 1px;
+	border-bottom: #000 solid 1px; */
+}
+.active{
+	color: #000;
+	background-color: #fff;
+	padding: 25%;
+	border-radius: 50%;
+}
+
+
