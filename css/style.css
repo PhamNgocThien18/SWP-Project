@@ -60,7 +60,10 @@ a {
 	margin-bottom: 20px;
 	display: flex;
 }
-
+.navbar{
+	border-bottom: #d7dbde solid 1px;
+	margin-bottom: 1%;
+}
 /* .navbar-top .navbar-header {
     height: auto;
     width: 100%;
@@ -166,7 +169,9 @@ a {
 .table-all {
 	min-height: 600px;
 }
-
+.table{
+	margin-top: 0;
+}
 /* FOOTER */
 
 
@@ -582,9 +587,9 @@ select#cars {
 	
 }
 .navbar-option ul li{
-	padding-top: 50%;
+	padding-top: 30%;
 	padding-left: 40%;
-	font-size: 22px;
+	font-size: 25px;
 }
 .fas-option{
 	color: #fff;
@@ -622,6 +627,9 @@ select#cars {
 	background-color: #fff;
 	padding: 25%;
 	border-radius: 50%;
+	position: relative;
+	border: #fff solid 1px;
 }
+
 
 
