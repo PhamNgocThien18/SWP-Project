@@ -644,4 +644,9 @@ select#cars {
 	width: 100%;
 	height: 100%;
 }
+.btn-chose-filter{
+	width: 100px;
+	height: 50px;
+	margin-top: 20px;
+}
 
