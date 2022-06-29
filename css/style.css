@@ -637,5 +637,11 @@ select#cars {
 .btn-color{
 	background: linear-gradient(210.09deg, rgb(110, 251, 124) 31.28%, rgb(83, 176, 228) 65.92%);
 }
-
+.filer-icon{
+	font-size: 25px;
+}
+.btn-filter{
+	width: 100%;
+	height: 100%;
+}
 
