@@ -35,8 +35,8 @@
             <!-- welcome -->
             <div class="col-sm-3 welcome d-flex align-items-center justify-content-end">
                 <div class="nav-item dropdown ">
-                    <a class="nav-link dropdown-toggle d-flex align-items-center user-info"
-                        href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown">
+                    <a class="nav-link dropdown-toggle d-flex align-items-center user-info" href="#"
+                        id="navbarDropdownMenuLink" role="button" data-toggle="dropdown">
                         <img src="https://scontent.fsgn5-11.fna.fbcdn.net/v/t1.6435-9/148200636_528659258096027_8966625421411191162_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=dzMdGh7CUt4AX978A2p&_nc_ht=scontent.fsgn5-11.fna&oh=00_AT_T8cl7XJeQ7xnVIt7NSbBeFkMmZy_8FtaihBZKvwhxjw&oe=62BB3767"
                             class="rounded-circle" height="25">
                         <p class="user-name">Thienpnse150137</p>
@@ -91,7 +91,51 @@
                         <td>thienpnse150137@fpt.edu.vn</td>
                         <td>AD</td>
                         <td>Active</td>
-                        <td><button type="button" class="btn btn-success"><i class="fas fa-recycle"></i></button></td>
+                        <td id="chosefilter" onclick=Modal()><button type="button" class="btn btn-success"><i
+                                    class="fas fa-recycle"></i></button>
+                            <div id="FilterModal" class="modal fade" role="dialog">
+                                <div class="modal-dialog modal-lg" role="content">
+                                    <!-- Modal content-->
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h4 class="modal-title">Chose Filter</h4>
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form>
+                                                <div class="form-row">
+                                                    <div class="form-group col-sm-12 d-flex">
+                                                        <h5 class="col-sm-4">Phone</h5>
+                                                        <input class="col-sm-6" type="text"
+                                                            placeholder="Input new Cate ID">
+                                                    </div>
+                                                    <div class="form-group col-sm-12 d-flex">
+                                                        <h5 class="col-sm-4">Email</h5>
+                                                        <input class="col-sm-6" type="text"
+                                                            placeholder="Input new Cate Name">
+                                                    </div>
+                                                    <div class="form-group col-sm-12 d-flex">
+                                                        <h5 class="col-sm-4">Role</h5>
+                                                        <input class="col-sm-6" type="text"
+                                                            placeholder="Input new Cate Name">
+                                                    </div>
+                                                    <div class="form-group col-sm-12 d-flex">
+                                                        <h5 class="col-sm-4">Status</h5>
+                                                        <input class="col-sm-6" type="text"
+                                                            placeholder="Input new Cate Name">
+                                                    </div>
+                                                    <div class="col-sm-12">
+                                                        <button class="btn btn-success col-sm-4">
+                                                            Update
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
                     </tr>
                     <tr>
                         <td>01</td>
@@ -101,7 +145,51 @@
                         <td>thienpnse150137@fpt.edu.vn</td>
                         <td>AD</td>
                         <td>Active</td>
-                        <td><button type="button" class="btn btn-success"><i class="fas fa-recycle"></i></button></td>
+                        <td id="chosefilter" onclick=Modal()><button type="button" class="btn btn-success"><i
+                                    class="fas fa-recycle"></i></button>
+                            <div id="FilterModal" class="modal fade" role="dialog">
+                                <div class="modal-dialog modal-lg" role="content">
+                                    <!-- Modal content-->
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h4 class="modal-title">Chose Filter</h4>
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form>
+                                                <div class="form-row">
+                                                    <div class="form-group col-sm-12 d-flex">
+                                                        <h5 class="col-sm-4">Phone</h5>
+                                                        <input class="col-sm-6" type="text"
+                                                            placeholder="Input new Cate ID">
+                                                    </div>
+                                                    <div class="form-group col-sm-12 d-flex">
+                                                        <h5 class="col-sm-4">Email</h5>
+                                                        <input class="col-sm-6" type="text"
+                                                            placeholder="Input new Cate Name">
+                                                    </div>
+                                                    <div class="form-group col-sm-12 d-flex">
+                                                        <h5 class="col-sm-4">Role</h5>
+                                                        <input class="col-sm-6" type="text"
+                                                            placeholder="Input new Cate Name">
+                                                    </div>
+                                                    <div class="form-group col-sm-12 d-flex">
+                                                        <h5 class="col-sm-4">Status</h5>
+                                                        <input class="col-sm-6" type="text"
+                                                            placeholder="Input new Cate Name">
+                                                    </div>
+                                                    <div class="col-sm-12">
+                                                        <button class="btn btn-success col-sm-4">
+                                                            Update
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
                     </tr>
                     <tr>
                         <td>01</td>
@@ -111,7 +199,51 @@
                         <td>admin@fpt.edu.vn</td>
                         <td>AD</td>
                         <td>Active</td>
-                        <td><button type="button" class="btn btn-success"><i class="fas fa-recycle"></i></button></td>
+                        <td id="chosefilter" onclick=Modal()><button type="button" class="btn btn-success"><i
+                                    class="fas fa-recycle"></i></button>
+                            <div id="FilterModal" class="modal fade" role="dialog">
+                                <div class="modal-dialog modal-lg" role="content">
+                                    <!-- Modal content-->
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h4 class="modal-title">Chose Filter</h4>
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form>
+                                                <div class="form-row">
+                                                    <div class="form-group col-sm-12 d-flex">
+                                                        <h5 class="col-sm-4">Phone</h5>
+                                                        <input class="col-sm-6" type="text"
+                                                            placeholder="Input new Cate ID">
+                                                    </div>
+                                                    <div class="form-group col-sm-12 d-flex">
+                                                        <h5 class="col-sm-4">Email</h5>
+                                                        <input class="col-sm-6" type="text"
+                                                            placeholder="Input new Cate Name">
+                                                    </div>
+                                                    <div class="form-group col-sm-12 d-flex">
+                                                        <h5 class="col-sm-4">Role</h5>
+                                                        <input class="col-sm-6" type="text"
+                                                            placeholder="Input new Cate Name">
+                                                    </div>
+                                                    <div class="form-group col-sm-12 d-flex">
+                                                        <h5 class="col-sm-4">Status</h5>
+                                                        <input class="col-sm-6" type="text"
+                                                            placeholder="Input new Cate Name">
+                                                    </div>
+                                                    <div class="col-sm-12">
+                                                        <button class="btn btn-success col-sm-4">
+                                                            Update
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
                     </tr>
                     <tr>
                         <td>01</td>
@@ -121,7 +253,51 @@
                         <td>admin@fpt.edu.vn</td>
                         <td>AD</td>
                         <td>Active</td>
-                        <td><button type="button" class="btn btn-success"><i class="fas fa-recycle"></i></button></td>
+                        <td id="chosefilter" onclick=Modal()><button type="button" class="btn btn-success"><i
+                                    class="fas fa-recycle"></i></button>
+                            <div id="FilterModal" class="modal fade" role="dialog">
+                                <div class="modal-dialog modal-lg" role="content">
+                                    <!-- Modal content-->
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h4 class="modal-title">Chose Filter</h4>
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form>
+                                                <div class="form-row">
+                                                    <div class="form-group col-sm-12 d-flex">
+                                                        <h5 class="col-sm-4">Phone</h5>
+                                                        <input class="col-sm-6" type="text"
+                                                            placeholder="Input new Cate ID">
+                                                    </div>
+                                                    <div class="form-group col-sm-12 d-flex">
+                                                        <h5 class="col-sm-4">Email</h5>
+                                                        <input class="col-sm-6" type="text"
+                                                            placeholder="Input new Cate Name">
+                                                    </div>
+                                                    <div class="form-group col-sm-12 d-flex">
+                                                        <h5 class="col-sm-4">Role</h5>
+                                                        <input class="col-sm-6" type="text"
+                                                            placeholder="Input new Cate Name">
+                                                    </div>
+                                                    <div class="form-group col-sm-12 d-flex">
+                                                        <h5 class="col-sm-4">Status</h5>
+                                                        <input class="col-sm-6" type="text"
+                                                            placeholder="Input new Cate Name">
+                                                    </div>
+                                                    <div class="col-sm-12">
+                                                        <button class="btn btn-success col-sm-4">
+                                                            Update
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
                     </tr>
                     <tr>
                         <td>01</td>
@@ -131,7 +307,51 @@
                         <td>admin@fpt.edu.vn</td>
                         <td>AD</td>
                         <td>Active</td>
-                        <td><button type="button" class="btn btn-success"><i class="fas fa-recycle"></i></button></td>
+                        <td id="chosefilter" onclick=Modal()><button type="button" class="btn btn-success"><i
+                                    class="fas fa-recycle"></i></button>
+                            <div id="FilterModal" class="modal fade" role="dialog">
+                                <div class="modal-dialog modal-lg" role="content">
+                                    <!-- Modal content-->
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h4 class="modal-title">Chose Filter</h4>
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form>
+                                                <div class="form-row">
+                                                    <div class="form-group col-sm-12 d-flex">
+                                                        <h5 class="col-sm-4">Phone</h5>
+                                                        <input class="col-sm-6" type="text"
+                                                            placeholder="Input new Cate ID">
+                                                    </div>
+                                                    <div class="form-group col-sm-12 d-flex">
+                                                        <h5 class="col-sm-4">Email</h5>
+                                                        <input class="col-sm-6" type="text"
+                                                            placeholder="Input new Cate Name">
+                                                    </div>
+                                                    <div class="form-group col-sm-12 d-flex">
+                                                        <h5 class="col-sm-4">Role</h5>
+                                                        <input class="col-sm-6" type="text"
+                                                            placeholder="Input new Cate Name">
+                                                    </div>
+                                                    <div class="form-group col-sm-12 d-flex">
+                                                        <h5 class="col-sm-4">Status</h5>
+                                                        <input class="col-sm-6" type="text"
+                                                            placeholder="Input new Cate Name">
+                                                    </div>
+                                                    <div class="col-sm-12">
+                                                        <button class="btn btn-success col-sm-4">
+                                                            Update
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
                     </tr>
                     <tr>
                         <td>01</td>
@@ -141,7 +361,51 @@
                         <td>admin@fpt.edu.vn</td>
                         <td>AD</td>
                         <td>Active</td>
-                        <td><button type="button" class="btn btn-success"><i class="fas fa-recycle"></i></button></td>
+                        <td id="chosefilter" onclick=Modal()><button type="button" class="btn btn-success"><i
+                                    class="fas fa-recycle"></i></button>
+                            <div id="FilterModal" class="modal fade" role="dialog">
+                                <div class="modal-dialog modal-lg" role="content">
+                                    <!-- Modal content-->
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h4 class="modal-title">Chose Filter</h4>
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form>
+                                                <div class="form-row">
+                                                    <div class="form-group col-sm-12 d-flex">
+                                                        <h5 class="col-sm-4">Phone</h5>
+                                                        <input class="col-sm-6" type="text"
+                                                            placeholder="Input new Cate ID">
+                                                    </div>
+                                                    <div class="form-group col-sm-12 d-flex">
+                                                        <h5 class="col-sm-4">Email</h5>
+                                                        <input class="col-sm-6" type="text"
+                                                            placeholder="Input new Cate Name">
+                                                    </div>
+                                                    <div class="form-group col-sm-12 d-flex">
+                                                        <h5 class="col-sm-4">Role</h5>
+                                                        <input class="col-sm-6" type="text"
+                                                            placeholder="Input new Cate Name">
+                                                    </div>
+                                                    <div class="form-group col-sm-12 d-flex">
+                                                        <h5 class="col-sm-4">Status</h5>
+                                                        <input class="col-sm-6" type="text"
+                                                            placeholder="Input new Cate Name">
+                                                    </div>
+                                                    <div class="col-sm-12">
+                                                        <button class="btn btn-success col-sm-4">
+                                                            Update
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
                     </tr>
                     <tr>
                         <td>01</td>
@@ -151,7 +415,51 @@
                         <td>admin@fpt.edu.vn</td>
                         <td>AD</td>
                         <td>Active</td>
-                        <td><button type="button" class="btn btn-success"><i class="fas fa-recycle"></i></button></td>
+                        <td id="chosefilter" onclick=Modal()><button type="button" class="btn btn-success"><i
+                                    class="fas fa-recycle"></i></button>
+                            <div id="FilterModal" class="modal fade" role="dialog">
+                                <div class="modal-dialog modal-lg" role="content">
+                                    <!-- Modal content-->
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h4 class="modal-title">Chose Filter</h4>
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form>
+                                                <div class="form-row">
+                                                    <div class="form-group col-sm-12 d-flex">
+                                                        <h5 class="col-sm-4">Phone</h5>
+                                                        <input class="col-sm-6" type="text"
+                                                            placeholder="Input new Cate ID">
+                                                    </div>
+                                                    <div class="form-group col-sm-12 d-flex">
+                                                        <h5 class="col-sm-4">Email</h5>
+                                                        <input class="col-sm-6" type="text"
+                                                            placeholder="Input new Cate Name">
+                                                    </div>
+                                                    <div class="form-group col-sm-12 d-flex">
+                                                        <h5 class="col-sm-4">Role</h5>
+                                                        <input class="col-sm-6" type="text"
+                                                            placeholder="Input new Cate Name">
+                                                    </div>
+                                                    <div class="form-group col-sm-12 d-flex">
+                                                        <h5 class="col-sm-4">Status</h5>
+                                                        <input class="col-sm-6" type="text"
+                                                            placeholder="Input new Cate Name">
+                                                    </div>
+                                                    <div class="col-sm-12">
+                                                        <button class="btn btn-success col-sm-4">
+                                                            Update
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
                     </tr>
                     <tr>
                         <td>01</td>
@@ -161,7 +469,51 @@
                         <td>admin@fpt.edu.vn</td>
                         <td>AD</td>
                         <td>Active</td>
-                        <td><button type="button" class="btn btn-success"><i class="fas fa-recycle"></i></button></td>
+                        <td id="chosefilter" onclick=Modal()><button type="button" class="btn btn-success"><i
+                                    class="fas fa-recycle"></i></button>
+                            <div id="FilterModal" class="modal fade" role="dialog">
+                                <div class="modal-dialog modal-lg" role="content">
+                                    <!-- Modal content-->
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h4 class="modal-title">Chose Filter</h4>
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form>
+                                                <div class="form-row">
+                                                    <div class="form-group col-sm-12 d-flex">
+                                                        <h5 class="col-sm-4">Phone</h5>
+                                                        <input class="col-sm-6" type="text"
+                                                            placeholder="Input new Cate ID">
+                                                    </div>
+                                                    <div class="form-group col-sm-12 d-flex">
+                                                        <h5 class="col-sm-4">Email</h5>
+                                                        <input class="col-sm-6" type="text"
+                                                            placeholder="Input new Cate Name">
+                                                    </div>
+                                                    <div class="form-group col-sm-12 d-flex">
+                                                        <h5 class="col-sm-4">Role</h5>
+                                                        <input class="col-sm-6" type="text"
+                                                            placeholder="Input new Cate Name">
+                                                    </div>
+                                                    <div class="form-group col-sm-12 d-flex">
+                                                        <h5 class="col-sm-4">Status</h5>
+                                                        <input class="col-sm-6" type="text"
+                                                            placeholder="Input new Cate Name">
+                                                    </div>
+                                                    <div class="col-sm-12">
+                                                        <button class="btn btn-success col-sm-4">
+                                                            Update
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
                     </tr>
                 </tbody>
             </table>
@@ -199,5 +551,18 @@
             </div>
         </div>
     </footer>
+    <script>
+        // $(document).ready(function () {
+        //     $("#chosefilter").click(function () {
+        //         $("#FilterModal").modal("show");
+        //     });
+        // });
+
+        function Modal() {
+            $("#chosefilter")
+            $("#FilterModal").modal("show");
+        };
+    </script>
 </body>
+
 </html>
