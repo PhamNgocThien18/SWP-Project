@@ -706,9 +706,7 @@ select#cars {
 .ram-select3:checked ~ .ram-3,.ram-select4:checked ~ .ram-4,.chip-select1:checked ~ .chip-1,.chip-select2:checked ~ .chip-2,.chip-select3:checked ~ .chip-3,.chip-select4:checked ~ .chip-4,
 .chip-select5:checked ~ .chip-5
 {
-	background: linear-gradient(210.09deg, rgb(110, 251, 124) 31.28%, rgb(83, 176, 228) 65.92%);
-	border: rgb(219, 16, 16) solid 5px;	
-	color: #fff;
+	border: #000 solid 5px;	
 	font-size: 18px;
 }
 .fa-times{
