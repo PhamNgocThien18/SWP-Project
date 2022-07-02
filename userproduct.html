@@ -109,23 +109,80 @@
                       <form>
                           <div class="form-row">
                              <div class="row col-12">
-                              <div class="">
-                                <p>Đã chọn :</p>
+                                <p class="row col-sm-12">
+                                  Đã Chọn: 
+                                  <label class="brand-1" id="chose-brand-1" for="brand-select1"> Lenovo<i class="fa fa-times"></i></label>
+                                  <label class="brand-2" id="chose-brand-2" for="brand-select2"> Apple <i class="fa fa-times"></i></label>
+                                  <label class="brand-3" id="chose-brand-3" for="brand-select3"> Asus <i class="fa fa-times"></i></label>
+                                  <label class="brand-4" id="chose-brand-4" for="brand-select4"> Dell <i class="fa fa-times"></i></label>
+                                  <label class="ram-1" id="chose-ram-1" for="ram-select1">4GB <i class="fa fa-times"></i></label>
+                                  <label class="ram-2" id="chose-ram-2" for="ram-select2">8GB <i class="fa fa-times"></i></label>
+                                  <label class="ram-3" id="chose-ram-3" for="ram-select3">16GB <i class="fa fa-times"></i></label>
+                                  <label class="ram-4" id="chose-ram-4" for="ram-select4">32GB <i class="fa fa-times"></i></label>
+                                  <label class="chip-1" id="chose-chip-1" for="chip-select1">I3 <i class="fa fa-times"></i></label>
+                                  <label class="chip-2" id="chose-chip-2" for="chip-select2">I5 <i class="fa fa-times"></i></label>
+                                  <label class="chip-3" id="chose-chip-3" for="chip-select3">I7 <i class="fa fa-times"></i></label>
+                                  <label class="chip-4" id="chose-chip-4" for="chip-select4">I9 <i class="fa fa-times"></i></label>
+                                  <label class="chip-5" id="chose-chip-5" for="chip-select5">M1 <i class="fa fa-times"></i></label>
+                                </p>
+
+                                <div class="row col-sm-12">
+                                  
+                                </div>
                               </div>
                                 <div class="col-12">
                                   <h4>Brand</h4>
                                   <div class="col-12 ">
-                                    <input type="checkbox" name="" id="">
-                                    <button type="button"> Cặc</button>
-                                    <input type="checkbox" name="" id="">
-                                    <button type="button"> Cặc</button>
-                                    <input type="checkbox" name="" id="">
-                                    <button type="button"> Cặc</button>
-                                    <input type="checkbox" name="" id="">
-                                    <button type="button"> Cặc</button>
+                                    <input onclick="Show()" type="checkbox" class="brand-select1" id="brand-select1">
+                                    <label class="brand-1" for="brand-select1"> Lenovo</label>
+
+                                    <input onclick="Show1()" type="checkbox" class="brand-select2" id="brand-select2">
+                                    <label class="brand-2" for="brand-select2"> Apple</label>
+
+                                    <input onclick="Show2()" type="checkbox" class="brand-select3" id="brand-select3">
+                                    <label class="brand-3" for="brand-select3"> Asus</label>
+
+                                    <input onclick="Show3()" type="checkbox" class="brand-select4" id="brand-select4">
+                                    <label class="brand-4" for="brand-select4"> Dell</label>
+
                                   </div>
                                 </div>
                                 <div class="col-12 d-flex mt-3">
+                                  <h4 class="col-6">Ram</h4>
+                                  <h4 class="col-6">Chip</h4>
+                                </div>
+                                <div class="col-12 d-flex">
+                                  <div class="col-6">
+                                    <input onclick="Showram()" type="checkbox" class="ram-select1" id="ram-select1">
+                                    <label class="ram-1" for="ram-select1">4GB</label>
+
+                                    <input onclick="Showram1()" type="checkbox" class="ram-select2" id="ram-select2">
+                                    <label class="ram-2" for="ram-select2">8GB</label>
+
+                                    <input onclick="Showram2()" type="checkbox" class="ram-select3" id="ram-select3">
+                                    <label class="ram-3" for="ram-select3">16GB</label>
+
+                                    <input onclick="Showram3()" type="checkbox" class="ram-select4" id="ram-select4">
+                                    <label class="ram-4" for="ram-select4">32GB</label>
+                                  </div>
+                                  <div class="col-6">
+                                    <input onclick="Showchip()" type="checkbox" class="chip-select1" id="chip-select1">
+                                    <label class="chip-1" for="chip-select1">I3</label>
+
+                                    <input onclick="Showchip1()" type="checkbox" class="chip-select2" id="chip-select2">
+                                    <label class="chip-2" for="chip-select2">I5</label>
+
+                                    <input onclick="Showchip2()" type="checkbox" class="chip-select3" id="chip-select3">
+                                    <label class="chip-3" for="chip-select3">I7</label>
+
+                                    <input onclick="Showchip3()" type="checkbox" class="chip-select4" id="chip-select4">
+                                    <label class="chip-4" for="chip-select4">I9</label>
+
+                                    <input onclick="Showchip4()" type="checkbox" class="chip-select5" id="chip-select5">
+                                    <label class="chip-5" for="chip-select5">M1</label>
+                                  </div>
+                                </div>
+                                <!-- <div class="col-12 d-flex mt-3">
                                   <h4 class="col-6">Ram</h4>
                                   <h4 class="col-6">Chip</h4>
                                 </div>
@@ -150,34 +207,12 @@
                                     <input type="checkbox" name="" id="">
                                     <button type="button"> Cặc</button>
                                   </div>
-                                </div>
-                                <div class="col-12 d-flex mt-3">
-                                  <h4 class="col-6">Ram</h4>
-                                  <h4 class="col-6">Chip</h4>
-                                </div>
-                                <div class="col-12 d-flex">
-                                  <div class="col-6">
-                                    <input type="checkbox" name="" id="">
-                                    <button type="button"> Cặc</button>
-                                    <input type="checkbox" name="" id="">
-                                    <button type="button"> Cặc</button>
-                                    <input type="checkbox" name="" id="">
-                                    <button type="button"> Cặc</button>
-                                    <input type="checkbox" name="" id="">
-                                    <button type="button"> Cặc</button>
-                                  </div>
-                                  <div class="col-6">
-                                    <input type="checkbox" name="" id="">
-                                    <button type="button"> Cặc</button>
-                                    <input type="checkbox" name="" id="">
-                                    <button type="button"> Cặc</button>
-                                    <input type="checkbox" name="" id="">
-                                    <button type="button"> Cặc</button>
-                                    <input type="checkbox" name="" id="">
-                                    <button type="button"> Cặc</button>
-                                  </div>
+                                </div> -->
+                                <div>
+                                   
                                 </div>
                              </div>
+
                            <div class="col-12 d-flex">
                               <div class="col-6 mt-3">
                                 <button class="btn-filter btn btn-danger">Cancel</button>
@@ -214,7 +249,7 @@
                   <td class="text-center">Active</td>
                   <td class="text-center">Active</td>
                   <td class="text-center">Active</td>
-                  <td class="text-center"><button type="button">Detail</button></td>
+                  <td class="text-center"><a href="detaildevices.html"> <button type="button">Detail</button></a></td>
                   <td class="text-center"><button type="button">Borrow</button></td>
                 </tr>
                 <tr>
@@ -239,6 +274,98 @@
             $("#FilterModal").modal("show");
         });
       });
+      
+      function Show(){
+        if(document.getElementById('chose-brand-1').style.display==="block"){
+          document.getElementById('chose-brand-1').style.display="none";
+        }else{
+          document.getElementById('chose-brand-1').style.display="block"
+        }
+      }
+      function Show1(){
+        if(document.getElementById('chose-brand-2').style.display==="block"){
+          document.getElementById('chose-brand-2').style.display="none";
+        }else{
+          document.getElementById('chose-brand-2').style.display="block"
+        }
+      }
+      function Show2(){
+        if(document.getElementById('chose-brand-3').style.display==="block"){
+          document.getElementById('chose-brand-3').style.display="none";
+        }else{
+          document.getElementById('chose-brand-3').style.display="block"
+        }
+      }
+      function Show3(){
+        if(document.getElementById('chose-brand-4').style.display==="block"){
+          document.getElementById('chose-brand-4').style.display="none";
+        }else{
+          document.getElementById('chose-brand-4').style.display="block"
+        }
+      }
+      function Showram(){
+        if(document.getElementById('chose-ram-1').style.display==="block"){
+          document.getElementById('chose-ram-1').style.display="none";
+        }else{
+          document.getElementById('chose-ram-1').style.display="block"
+        }
+      }
+      function Showram1(){
+        if(document.getElementById('chose-ram-2').style.display==="block"){
+          document.getElementById('chose-ram-2').style.display="none";
+        }else{
+          document.getElementById('chose-ram-2').style.display="block"
+        }
+      }
+      function Showram2(){
+        if(document.getElementById('chose-ram-3').style.display==="block"){
+          document.getElementById('chose-ram-3').style.display="none";
+        }else{
+          document.getElementById('chose-ram-3').style.display="block"
+        }
+      }
+      function Showram3(){
+        if(document.getElementById('chose-ram-4').style.display==="block"){
+          document.getElementById('chose-ram-4').style.display="none";
+        }else{
+          document.getElementById('chose-ram-4').style.display="block"
+        }
+      }
+      function Showchip(){
+        if(document.getElementById('chose-chip-1').style.display==="block"){
+          document.getElementById('chose-chip-1').style.display="none";
+        }else{
+          document.getElementById('chose-chip-1').style.display="block"
+        }
+      }
+      function Showchip1(){
+        if(document.getElementById('chose-chip-2').style.display==="block"){
+          document.getElementById('chose-chip-2').style.display="none";
+        }else{
+          document.getElementById('chose-chip-2').style.display="block"
+        }
+      }
+      function Showchip2(){
+        if(document.getElementById('chose-chip-3').style.display==="block"){
+          document.getElementById('chose-chip-3').style.display="none";
+        }else{
+          document.getElementById('chose-chip-3').style.display="block"
+        }
+      }
+      function Showchip3(){
+        if(document.getElementById('chose-chip-4').style.display==="block"){
+          document.getElementById('chose-chip-4').style.display="none";
+        }else{
+          document.getElementById('chose-chip-4').style.display="block"
+        }
+      }
+      function Showchip4(){
+        if(document.getElementById('chose-chip-5').style.display==="block"){
+          document.getElementById('chose-chip-5').style.display="none";
+        }else{
+          document.getElementById('chose-chip-5').style.display="block"
+        }
+      }
   </script>
   </body>
 </html>

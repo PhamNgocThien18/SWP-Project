@@ -7,11 +7,74 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.8.0/chart.min.js"></script>
     <title>Hello, world!</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="fonts/themify-icons/themify-icons.css">
+    <link rel="icon" href="./img/word-image-1047.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
   </head>
   <body>
-    <h1>Hello, world!</h1>
-    <div  class="container">
-        <canvas id="myChart"></canvas>
+    <div class="navbar-top">
+      <div class="navbar-header">
+          <!-- logo -->
+          <div class="col-sm-3 logo">
+              <a href="#"><img src="./img/logo.png" height="80" alt=""></a>
+          </div>
+          <!-- name web -->
+          <div class="col-sm-6 d-flex align-items-center justify-content-center text-center name-website">
+              <a href="#">DRS - FPT University HCM</a>
+          </div>
+          <!-- welcome -->
+          <div class="col-sm-3 welcome d-flex align-items-center justify-content-end">
+              <div class="nav-item dropdown ">
+                  <a class="nav-link dropdown-toggle d-flex align-items-center user-info"
+                      href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown">
+                      <img src="https://scontent.fsgn5-11.fna.fbcdn.net/v/t1.6435-9/148200636_528659258096027_8966625421411191162_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=dzMdGh7CUt4AX978A2p&_nc_ht=scontent.fsgn5-11.fna&oh=00_AT_T8cl7XJeQ7xnVIt7NSbBeFkMmZy_8FtaihBZKvwhxjw&oe=62BB3767"
+                          class="rounded-circle" height="25">
+                      <p class="user-name">Thienpnse150137</p>
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <li>
+                          <a class="dropdown-item" href="myprofile.html">My profile</a>
+                      </li>
+                      <li>
+                          <a class="dropdown-item" href="login.html">Logout</a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+      <!-- search -->
+      <div class="seach-wapper">
+          <div class="search-left col-sm-8 order-md-first">
+              <div class="col-sm-3">
+                  <div>
+                      <a href="chartjs.html">
+                          <button class="dasboard-btn btn-color" type="button">
+                              DasBoard
+                          </button>
+                      </a>
+                  </div>
+              </div>
+          </div>
+          <div class="search col-sm-4 order-md-last">
+              <form action="" id="search-box">
+                  <div class="row search-box-wrapper">
+                      <input type="text" id="search-text" class="col-10" placeholder="Tìm">
+                      <button id="search-btn" class="col-2"><i class="fas fa-search "></i></button>
+                  </div>
+              </form>
+          </div>
+      </div>
+  </div>
+    <div class="container chart">
+      <canvas id="myChart"></canvas>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
@@ -30,7 +93,7 @@
       'rgb(54, 162, 235)',
       'rgb(255, 205, 86)'
     ],
-    hoverOffset: 4
+    hoverOffset: 4,
   }]
 };
 const config = {
