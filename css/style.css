@@ -695,7 +695,7 @@ select#cars {
 	width: 100%;
 }
 .rennow-button{
-	padding: 10px;
+	padding: 16px;
 	border-radius: 3px;
 	border: #000 solid 1px;
 	color: #fff;
@@ -705,20 +705,20 @@ select#cars {
 {
 	display: none;
 }
-.brand-1,.brand-2,.brand-3,.brand-4,.ram-1,.ram-2,.ram-3,.ram-4,.chip-1,.chip-2,.chip-3,.chip-4,.chip-5
+.brand-1,.brand-2,.brand-3,.brand-4,.ram-1,.ram-2,.ram-3,.ram-4,.chip-1,.chip-2,.chip-3,.chip-4,.chip-5,.display-1,.display-2
 {
 	border: #000 solid 1px;
-	padding: 5px 20px;
+	padding: 3px 10px;
 	border-radius: 5px;
 	font-size: 18px;
-	min-width: 120px;
+	min-width: 100px;
 	text-align: center;
 }
 .brand-select1:checked ~ .brand-1,.brand-select2:checked ~ .brand-2,.brand-select3:checked ~ .brand-3,.brand-select4:checked ~ .brand-4,.ram-select1:checked ~ .ram-1,.ram-select2:checked ~ .ram-2,
 .ram-select3:checked ~ .ram-3,.ram-select4:checked ~ .ram-4,.chip-select1:checked ~ .chip-1,.chip-select2:checked ~ .chip-2,.chip-select3:checked ~ .chip-3,.chip-select4:checked ~ .chip-4,
 .chip-select5:checked ~ .chip-5
 {
-	border: #000 solid 5px;	
+	border: #000 solid 3px;	
 	font-size: 18px;
 }
 .fa-times{
@@ -732,4 +732,11 @@ select#cars {
 	display: none;
 	padding: 0;
 	min-width: 100px;
+}
+.img-product{
+	width: 150px;
+}
+.addtocard-button{
+	padding: 12px;
+	/* border: #000 solid 1px; */
 }
