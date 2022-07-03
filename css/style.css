@@ -806,3 +806,26 @@ select#cars {
 .sibar-admin ul li {
 	padding: 15px 0px;
 }
+.file label{
+	padding: 15px;
+}
+.fa-file-image-o{
+	color: #000;
+}
+#file{
+	display: none;
+}
+.file{
+	border: #000 solid 1px;
+	padding: 4px 0px;
+}
+.fa-file-image{
+	align-items: start;	
+}
+.manager-function{
+	width: 100%;
+}
+.col-sm-12 .choose-manager-tittle{
+	padding: 0;
+	width: 90%;
+}
