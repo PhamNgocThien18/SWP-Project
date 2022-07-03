@@ -672,8 +672,8 @@ select#cars {
 }
 .chart{
 	width: 300px; 
-	position:absolute;
 	left: 300px;
+	border: #000 solid;
 }
 .sibar-admin ul{
 	background: linear-gradient(210.09deg, rgb(110, 251, 124) 31.28%, rgb(83, 176, 228) 65.92%);
@@ -802,4 +802,7 @@ select#cars {
 }
 .img-many:hover{
 	border: red solid 3px;
+}
+.sibar-admin ul li {
+	padding: 15px 0px;
 }

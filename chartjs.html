@@ -1,19 +1,19 @@
 <!doctype html>
 <html lang="en">
   <head>
-
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.8.0/chart.min.js"></script>
-    <title>Hello, world!</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="fonts/themify-icons/themify-icons.css">
-    <link rel="icon" href="./img/word-image-1047.jpg" type="image/x-icon">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
-    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>USER</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+    </style>
+    <link rel="stylesheet" href="fonts/themify-icons/themify-icons.css" />
+    <link rel="icon" href="./img/word-image-1047.jpg" type="image/x-icon" />
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
-        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous" />
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
@@ -55,9 +55,9 @@
           <div class="search-left col-sm-8 order-md-first">
               <div class="col-sm-3">
                   <div>
-                      <a href="chartjs.html">
+                      <a href="admin.html">
                           <button class="dasboard-btn btn-color" type="button">
-                              DasBoard
+                              Admin Home
                           </button>
                       </a>
                   </div>
@@ -73,26 +73,30 @@
           </div>
       </div>
   </div>
-    <div class="container chart">
-      <canvas id="myChart"></canvas>
+  <div class="col-sm-12">
+    <div class="col-sm-12">
+      <h1 class="col-sm-12">Devices</h1>
+      <div class="chart">
+        <canvas id="myChart"></canvas>
+      </div>
     </div>
+    
+  </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script>
         const data = {
   labels: [
-    'Red',
-    'Blue',
-    'Yellow'
+    'Inventory',
+    'Renting'
   ],
   datasets: [{
     label: 'My First Dataset',
-    data: [300, 50, 100],
+    data: [300, 300],
     backgroundColor: [
-      'rgb(255, 99, 132)',
-      'rgb(54, 162, 235)',
-      'rgb(255, 205, 86)'
-    ],
+      'rgb(110, 251, 124)',
+      'rgb(83, 176, 228)'
+      ],
     hoverOffset: 4,
   }]
 };
