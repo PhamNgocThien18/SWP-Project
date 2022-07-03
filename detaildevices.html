@@ -89,31 +89,87 @@
       </div>
     </div>
     <div class="detail-devices-wapper d-flex row">
-        <div class="img-devices col-sm-6 order-first">
-            <img class="img-devices" src="img/macbook.png">
+        <div class="col-sm-7 order-first">
+            <img class="img-devices" src="img/macbook.png" id="main-img">
+          <div class="col-sm-12 ml-5">
+            <p>
+              <img class="img-many" src="img/macbook.png">
+              <img class="img-many" src="img/macbook1.png">
+              <img class="img-many" src="img/macbook2.png">
+              <img class="img-many" src="img/macbook3.png">
+            </p>
+          </div>
         </div>
-        <div class="row detail-devices col-sm-6">
+        <div class="row detail-devices col-sm-5 mt-5">
             <div class="divices-name col-sm-12 mt-5">
-                <h3>MacBook Pro Bla Bla Bla</h3>
+                <h2>MacBook Pro Bla Bla Bla</h2>
+                <br/>
             </div>
             <div class="col-sm-12">
                 <p>Devices ID : 01</p>
                 <p>Warehous : HCM - HN</p>
                 <p>Brand Name : Apple</p>
                 <p>Quantity : 1000</p>
-                <p>Amount : <span><input type="number" value="1" min="0"></span></p>
-                <p class="add-card"><button type="submit"><i class="addtocard-button fas fa-shopping-cart"> Add to Card</i></button> <span class="ml-5 rennow-button">Rent Now</span></p>
-            </div>
+                <div class="buttons_added">
+                  <p>Amount: </p>
+                  <input class="minus is-form ml-3" type="button" value="-">
+                  <input aria-label="quantity" class="input-qty" max="100" min="1" name="" type="number" value="1">
+                  <input class="plus is-form" type="button" value="+">
+                </div>
+              </span>
+                <div class="col-sm-12 mt-5">
+                  <button class="rent-button"><i class="fas fa-shopping-cart"> Add to Card</i></button>
+                  <button class="rent-button-1">Rent Now</button>
+                </div> 
+          </div>
+        </div>
+        <div class="col-sm-12">
+          <h2 class="ml-5 mt-5">PRODUCT DESCRIPTION</h2>
+          <div class="ml-5">
+            <p>Specifications:</p>
+            <p>Brand: Apple</p> 
+            <p>CPU: M1</p>
+            <p>Ram: 16Gb</p>
+            <p>Hard Drive: 512GB SSD</p>
+            <p>Pin: 5000mh</p>
+            <p>Screen: 4K OLED</p>
+            <p>Connection ports:</p>
+            <p>1x USB 3.2</p>
+            <p>2x USB 2.0 Micro SD 4.0 card readers</p>
+            <p>1x HDMI 1.4</p>
+          </div>
+        </div>
+        <div class="col-sm-12">
+
         </div>
     </div>
 
     <footer></footer>
-    <!-- <script>
-      $(document).ready(function () {
-        $("#chosefilter").click(function () {
-            $("#FilterModal").modal("show");
-        });
-      });
-  </script> -->
+    <script>
+      $('input.input-qty').each(function() {
+        var $this = $(this),
+          qty = $this.parent().find('.is-form'),
+          min = Number($this.attr('min')),
+          max = Number($this.attr('max'))
+        if (min == 0) {
+          var d = 0
+        } else d = min
+        $(qty).on('click', function() {
+          if ($(this).hasClass('minus')) {
+            if (d > min) d += -1
+          } else if ($(this).hasClass('plus')) {
+            var x = Number($this.val()) + 1
+            if (x <= max) d += 1
+          }
+          $this.attr('value', d).val(d)
+        })
+      })
+      $(()=> {
+        $('p img').click(function(){
+          let imgPatch = $(this).attr('src');
+          $('#main-img').attr('src', imgPatch);
+        })
+      })
+      </script>
   </body>
 </html>
