@@ -159,8 +159,8 @@
                 <tr id="info">
                     <td><input type="text" class="text-center inputmanager1" value="01"></td>
                     <td class="imgmanager">
-                        <input type="file" id="update-img">
-                        <label for="update-img"><img class="img-product-manager" src="img/macbook.png" alt=""></label>
+                        <input type="file" id="update-img" accept="image/gif,image/jpeg,image/png" onchange="chooseFile(this)">
+                        <label for="update-img"><img class="img-product-manager" src="img/macbook.png" alt="" id="image"></label>
                     </td>
                     <td><input type="text" class="text-center inputmanager" id="input-devicename" value="01"></td>
                     <td>
@@ -237,6 +237,19 @@
     function Delete() {
       $("#info").remove();
        }
+    
+    
 </script>
+<script>
+       function chooseFile(fileInput){
+        if(fileInput.files && fileInput.files[0]){
+            var reader = new FileReader();
 
+            reader.onload = function(e) {
+                $('#image').attr('src',e.target.result);
+            }
+            reader.readAsDataURL(fileInput.files[0]);
+        }
+    }
+</script>
 </html>
